@@ -7,7 +7,11 @@
 <meta name="description" content="奇林國際租賃｜雙北⇄桃園機場接送、包車旅遊、商務用車。五年內車款、自有司機、即時 GPS，NT$1,000 起，加 LINE 新好友送 NT$100 首次搭乘乘車金，首趟最低 NT$900。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;900&display=swap">
+<!-- 標題字型：只下載標題實際用到的字（約 100 字），檔案很小，手機載入快。
+     ⚠ 之後如果修改了「標題」或「價格大字」的文字，新增的字要加進下面 text= 後面，
+       否則那個字會顯示成手機內建的字體。內文不受影響。 -->
+<link rel="preload" as="image" href="hero.jpg" fetchpriority="high">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@900&display=swap&text=%2401239NT%E4%B8%80%E4%B8%89%E4%B8%8B%E4%B8%8D%E4%BA%BA%E4%BB%98%E4%BD%A0%E4%BE%9D%E5%80%BC%E5%84%98%E5%86%8D%E5%87%BA%E5%88%86%E5%88%BB%E5%89%8D%E5%8F%AF%E5%8F%B0%E5%90%88%E5%9C%A8%E5%9C%B0%E5%A5%87%E5%A5%BD%E5%AE%89%E5%AE%8C%E5%B0%8A%E5%B0%B1%E5%B7%B2%E5%B8%B8%E5%BE%97%E5%BF%83%E6%83%B3%E6%85%A2%E6%88%90%E6%8E%A5%E6%90%AD%E6%93%87%E6%97%85%E6%98%AF%E6%99%9A%E6%9C%80%E6%9C%89%E6%9C%AC%E6%9E%97%E6%A6%AE%E6%A9%9F%E6%AD%A3%E6%AD%A5%E6%AF%8F%E7%85%A7%E7%94%A8%E7%9A%84%E7%9C%9F%E7%9F%A5%E7%A8%8B%E7%AD%89%E7%AE%A1%E7%AF%80%E7%B4%84%E7%B4%AF%E7%B4%B0%E7%B6%93%E8%83%BD%E8%90%BD%E8%A1%8C%E8%A2%AB%E8%A3%9D%E8%A3%A1%E8%A8%82%E8%A8%97%E8%B2%B7%E8%B5%B7%E8%B6%95%E8%B6%9F%E8%BA%AB%E8%BB%8A%E9%81%93%E9%81%A9%E9%81%B8%E9%82%A3%E9%83%BD%E9%90%98%E9%97%9C%E9%A0%90%E9%A1%A7%E9%A3%9B%EF%BC%8C">
 <!-- =====================================================================
      Meta Pixel（Facebook 像素）
      ---------------------------------------------------------------------
@@ -84,7 +88,7 @@
   }
 
   html { scroll-behavior: smooth; }
-  body { background: var(--bg); color: var(--ink); font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", system-ui, sans-serif; font-size: 16px; line-height: 1.75; }
+  body { background: var(--bg); color: var(--ink); font-family: "PingFang TC", "Noto Sans TC", "Noto Sans CJK TC", "Microsoft JhengHei", system-ui, sans-serif; font-size: 16px; line-height: 1.75; }
   h1, h2, h3 { text-wrap: balance; }
   .wrap { width: 100%; max-width: 1120px; margin-inline: auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
   .serif { font-family: "Noto Serif TC", "Songti TC", "PMingLiU", serif; }
@@ -154,7 +158,7 @@
 <header class="site-head">
   <div class="wrap flex items-center justify-between gap-4" style="padding-block:12px">
     <a href="#top" class="flex items-center gap-3 no-underline" aria-label="奇林國際租賃">
-      <img src="logo.png" alt="CHILING 奇林國際租賃" class="h-7 md:h-8 w-auto">
+      <img src="logo.png" width="310" height="75" alt="CHILING 奇林國際租賃" class="h-7 md:h-8 w-auto">
     </a>
     <nav class="hidden md:flex items-center gap-7 text-sm" style="color:var(--on-navy-muted)">
       <a href="#why" class="hover:text-white">為什麼選奇林</a>
@@ -221,7 +225,7 @@
     <div class="grid gap-12 md:gap-16">
       <!-- row 1 -->
       <article class="grid md:grid-cols-[1.3fr_1fr] items-center">
-        <img src="arrival.jpg" alt="媽媽帶著女兒在行李轉盤從容領行李" class="fade-r w-full rounded-2xl aspect-[4/3] object-cover" loading="lazy">
+        <img src="arrival.jpg" width="900" height="650" decoding="async" alt="媽媽帶著女兒在行李轉盤從容領行李" class="fade-r w-full rounded-2xl aspect-[4/3] object-cover" loading="lazy">
         <div class="pain-text pain-text-r min-w-0">
           <p class="pain text-[15px]">擔心班機延誤，出關時太匆忙？</p>
           <h3 class="serif font-black text-2xl md:text-3xl mt-2">不用趕，慢慢出關</h3>
@@ -230,7 +234,7 @@
       </article>
       <!-- row 2 -->
       <article class="grid md:grid-cols-[1fr_1.3fr] items-center">
-        <img src="night.jpg" alt="深夜車內，母女在後座熟睡，司機專注開車" class="fade-l w-full rounded-2xl aspect-[4/3] object-cover md:order-2" loading="lazy">
+        <img src="night.jpg" width="900" height="650" decoding="async" alt="深夜車內，母女在後座熟睡，司機專注開車" class="fade-l w-full rounded-2xl aspect-[4/3] object-cover md:order-2" loading="lazy">
         <div class="pain-text pain-text-l min-w-0 md:order-1">
           <p class="pain text-[15px]">半夜或清晨落地，想直接回家？</p>
           <h3 class="serif font-black text-2xl md:text-3xl mt-2">再晚，都有人接你</h3>
@@ -239,7 +243,7 @@
       </article>
       <!-- row 3 -->
       <article class="grid md:grid-cols-[1.3fr_1fr] items-center">
-        <img src="luggage.jpg" alt="司機將五件行李箱放進休旅車後車廂" class="fade-r w-full rounded-2xl aspect-[4/3] object-cover" loading="lazy">
+        <img src="luggage.jpg" width="900" height="650" decoding="async" alt="司機將五件行李箱放進休旅車後車廂" class="fade-r w-full rounded-2xl aspect-[4/3] object-cover" loading="lazy">
         <div class="pain-text pain-text-r min-w-0">
           <p class="pain text-[15px]">人多、行李多，怕一台車裝不下？</p>
           <h3 class="serif font-black text-2xl md:text-3xl mt-2">儘管買，車裝得下</h3>
@@ -463,7 +467,7 @@
 <footer style="background:var(--navy);color:var(--on-navy-muted);border-top:1px solid var(--on-navy-rule)">
   <div class="wrap flex flex-col md:flex-row md:items-center md:justify-between gap-5 text-sm pb-28 md:pb-8" style="padding-top: 32px">
     <div class="flex items-center gap-4">
-      <img src="logo.png" alt="CHILING 奇林國際租賃" class="h-6 w-auto">
+      <img src="logo.png" width="310" height="75" alt="CHILING 奇林國際租賃" class="h-6 w-auto">
       <span>奇林國際租賃有限公司・2018 年成立</span>
     </div>
     <div>官方 LINE：<a href="https://lin.ee/72HnM7K" data-line-cta="footer_text" target="_blank" rel="noopener" class="underline" style="color:var(--on-navy)">lin.ee/72HnM7K</a></div>
